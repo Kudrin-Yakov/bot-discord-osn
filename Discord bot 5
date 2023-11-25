@@ -7,36 +7,53 @@ bot = commands.Bot(command_prefix='-', intents=discord.Intents.all())
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
-@bot.command('кода')
+@bot.command('codes')
 async def hello(ctx): 
-    await ctx.send(f' Привет! Для более удобного использования бота, ты можешь использовать теги: безопасность, размер, жара, холод, развитие, чистота.')
+    await ctx.send(' Привет! Для более удобного использования бота, ты можешь использовать теги: safety, size, heat, cold, development, clean, sport, price, beautifull, popular.')
 
-@bot.command('Привет')
-async def hello(ctx):
-    await ctx.send(f'Привет! Я бот, который может отправить рейтинг лучших стран в определённых категориях!')
-    
-@bot.command('безопасность')
-async def haha(ctx):
+@bot.command('hello')
+async def hello2(ctx):
+    await ctx.send('Привет! Я бот, который может отправить рейтинг лучших стран в определённых категориях! Чтобы лучше использовать бота - введите команду codes.')
+
+@bot.command('safety')
+async def top(ctx):
     await ctx.send('Топ 10 стран по уровню безопасности: \n 1. Ислания \n 2. Новая Зеландия \n 3. Ирландия \n 4. Дания \n 5. Австрия \n 6. Португалия \n 7. Словения \n 8. Чешская Республика \n 9. Сингапур \n 10. Япония')
-  
-@bot.command('размер')
-async def haha(ctx):
+
+@bot.command('size')
+async def ttop(ctx):
   await ctx.send('Топ 10 стран по размеру: \n 1. Россия \n 2. Канада \n 3. Китай \n 4. США \n 5. Бразилия \n 6. Австралия \n 7. Индия \n 8. Аргентина \n 9. Казахстан \n 10. Алжир')
 
-@bot.command('жара')
-async def haha(ctx):
+@bot.command('heat')
+async def tttop(ctx):
   await ctx.send('Топ-10 самых жарких стран мира: \n 1. Ливия \n 2. Саудовская Аравия \n 3. Ирак \n 4. Алжир \n 5. Иран \n 6. Оман \n 7. Судан \n 8. Индия \n 9. Сомали \n 10. Мексика')
 
-@bot.command('холод')
-async def haha(ctx):
+@bot.command('cold')
+async def ttttop(ctx):
   await ctx.send('Топ-10 самых холодных стран мира: \n 1. Дания \n 2. Россия \n 3. США \n 4. Финляндия \n 5. Казахстан \n 6. Исландия \n 7. Канада \n 8. Монголия \n 9. Эстония \n 10. Норвегия')
 
-@bot.command('развитие')
-async def haha(ctx):
+@bot.command('development')
+async def tttttop(ctx):
   await ctx.send('Топ-10 самых развитых стран мира: \n 1. Канада \n 2. Япония \n 3. Израиль \n 4. Корея \n 5. Великобритания \n 6. США \n 7. Австралия \n 8. Финляндия \n 9. Норвегия \n 10. Люксембург')
 
-@bot.command('чистота')
-async def haha(ctx):
+@bot.command('clean')
+async def ttttttop(ctx):
   await ctx.send('Топ-10 самых чистых стран мира: \n 1. Дания \n 2. Люксембург \n 3. Швейцария \n 4. Великобритания \n 5. Франция \n 6. Австрия \n 7. Финляндия \n 8. Швеция \n 9. Норвегия \n 10. Германия')
+
+@bot.command('sport')
+async def tttttttop(ctx):
+  await ctx.send('Топ-10 самых спортивных стран мира: \n 1. США \n 2. Россия \n 3. Китай \n 4. Германия \n 5. Франция \n 6. Великобритания \n 7. Австралия \n 8. Япония \n 9. Испания \n 10. Италия')
+
+@bot.command('price')
+async def ttttttttop(ctx):
+  await ctx.send('Топ-10 самых дорогих по проживанию стран мира: \n 1. Швейцария \n 2. Норвегия \n 3. Исландия \n 4. Дания \n 5. Люксембург \n 6. Япония \n 7. Израиль \n 8. Сингапур \n 9. Австралия \n 10. Ирландия')
+
+@bot.command('beautiful')
+async def tttttttttop(ctx):
+  await ctx.send('Топ-10 самых красивых стран мира: \n 1.  Южно-Африканская Республика \n 2. Италия \n 3. Новая Зеландия \n 4. Канада \n 5. Швейцария \n 6. Греция \n 7. Норвегия \n 8. Индия \n 9. Бразилия \n 10. США')
+
+@bot.command('popular')
+async def ttttttttttop(ctx):
+  await ctx.send('Топ-10 самых популярных туристических стран мира: \n 1.  Франция \n 2. Испания \n 3. США \n 4. Китай \n 5. Италия \n 6. Турция \n 7. Мексика \n 8. Таиланд \n 9. Германия \n 10. Великобритания ')
+
 
 bot.run('-----------------------')
